@@ -8,33 +8,27 @@
 
 int main(void)
 {
-	int a, b, c;
+	int p, q;
 
-	for (a = '0'; a < '9'; a++)
+	for (p = 0; p <= 98; p++)
 	{
-		for (c = a + 2; c <= '9'; c++)
+		for (q = p + 1; q <= 99; q++)
 		{
-			for (b = a + 1; b <= '9'; b++)
-			{
-				if (b != a)
-				{
-					putchar('a');
-					putchar('b');
-				}
-				if (a == '7' && b == '8')
-					continue;
-			}
-			if (c != a)
-			{
-				putchar('a');
-				putchar('c');
-			}
-				if (a == '7' && c == '9')
-					continue;
+			putchar((p / 10) + '0');
+			putchar((p % 10) + '0');
+			putchar(' ');
+			putchar((q / 10) + '0');
+			putchar((q % 10) + '0');
+
+			if (p == 98 && q == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
-	putchar(',');
-	putchar(' ');
+
+	putchar('\n');
 
 	return (0);
 }
