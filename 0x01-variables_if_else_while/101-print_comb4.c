@@ -12,26 +12,29 @@ int main(void)
 
 	for (a = '0'; a < '9'; a++)
 	{
-		for (b = a + 1; b <= '9'; b++)
+		for (c = a + 2; c <= '9'; c++)
 		{
-			for (c = a + 2; c <= '9'; c++)
+			for (b = a + 1; b <= '9'; b++)
 			{
-				if (c != a)
+				if (b != a)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar('a');
+					putchar('b');
 				}
-				if (a == '7' && c == '9')
+				if (a == '7' && b == '8')
 					continue;
 			}
-			if (b != a)
+			if (c != a)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar('a');
+				putchar('c');
 			}
-				if (a == '7' && b == '8')
+				if (a == '7' && c == '9')
 					continue;
 		}
 	}
+	putchar(',');
+	putchar(' ');
+
 	return (0);
 }
