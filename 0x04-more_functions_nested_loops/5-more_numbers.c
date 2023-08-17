@@ -17,7 +17,7 @@ void more_numbers(void)
 			count = i;
 			if (i > 9)
 			{
-				_putchar(1 + 48);
+				_putchar(i / 10  + 48);
 				count = i % 10;
 			}
 			_putchar(count + 48);
