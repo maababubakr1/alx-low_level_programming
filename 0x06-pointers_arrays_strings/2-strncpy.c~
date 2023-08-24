@@ -1,0 +1,13 @@
+#include "main.h"
+
+/**
+ * _strncpy - A function that copies a string.
+ *@dest: A string
+ *@src: A string
+ *@n: An input integer
+ *Return: Nothing
+ */
+
+char *_strncpy(char *dest, char *src, int n)
+{
+	
