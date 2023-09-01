@@ -1,1 +1,1 @@
- Static lib 
+static
