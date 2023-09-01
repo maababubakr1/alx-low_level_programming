@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- *main - a function that tests the library
- *Return: Always 0.
+ *main 
  */
 int main(void)
 {
