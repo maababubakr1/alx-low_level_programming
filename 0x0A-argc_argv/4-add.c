@@ -54,7 +54,7 @@ int _atoi(char *s)
 
 int main(int argc, char *argv[])
 {
-	int i, j, k, num, sum;
+	int sum, num, i, j, k;
 
 	sum = 0;
 
@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 		{
 			if (argv[i][j] > '9' || argv[i][j] < '0')
 			{
-				puts("Error\n");
+				puts("Error");
 				return (1);
 			}
 		}
@@ -74,7 +74,9 @@ int main(int argc, char *argv[])
 	{
 		num = _atoi(argv[k]);
 		if (num >= 0)
+		{
 			sum += num;
+		}
 	}
 
 	printf("%d\n", sum);
