@@ -1,2 +1,1 @@
 new
- Static lib 
