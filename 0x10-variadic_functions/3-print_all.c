@@ -33,7 +33,7 @@ void print_all(const char * const format, ...)
 		{
 			tmp = va_arg(list, char *);
 			if (tmp == NULL)
-				printf("(nil)");
+				tmp = "(nil)";
 			printf("%s%s", sep, tmp);
 			break;
 		}
