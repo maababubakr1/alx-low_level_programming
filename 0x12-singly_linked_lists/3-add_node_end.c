@@ -1,0 +1,42 @@
+#include "lists.h"
+
+/**
+ *add_node_end - A function that adds a new node at the end of a list_t list.
+ *@head: A double pointer to the list
+ *@str: string of new node to be added at the end of list
+ *Return: the address of the new element, or NULL if it failed
+ */
+
+list_t *add_node_end(list_t **head, const char *str)
+{
+	list_t *add;
+	unsigned int i;
+	list_t *tmp = *head;
+
+	i = 0;
+
+	while (str[i])
+		i++;
+
+	add = malloc(sizeof(list_t));
+	if (!add)
+		return (NULL);
+
+	add->str = strdup(str);
+	add->len = i;
+	add->next = NULL;
+
+	if (*head == NULL)
+	{
+		*head = add;
+		return (add);
+
+	}
+
+	while (tmp->next)
+		tmp = tmp->next;
+
+	tmp->next = add;
+
+	return (add);
+}
