@@ -1,0 +1,12 @@
+#include "lists.h"
+
+/**
+ *pop_listint - A function that deletes the head node
+ *@head: A pointer to the head node
+ *Return: The head node data or 0.
+ */
+
+int pop_listint(listint_t **head)
+{
+
+	
