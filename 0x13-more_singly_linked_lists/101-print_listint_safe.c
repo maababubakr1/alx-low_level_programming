@@ -20,7 +20,6 @@ size_t print_listint_safe(const listint_t *head)
 		count++;
 		temp = temp->next;
 
-		/** second pointer */
 		len = head;
 		i = 0;
 		while (i < count)
@@ -33,8 +32,6 @@ size_t print_listint_safe(const listint_t *head)
 			len = len->next;
 			i++;
 		}
-
-		/** condition in the task*/
 		if (!head)
 			exit(98);
 	}
