@@ -2,7 +2,7 @@
 
 /**
  *free_listint_safe - A function that frees a listint_t list
- *@h: 
+ *@h: A pointer to the first node
  *Return: The size of the list to be freed
  */
 
