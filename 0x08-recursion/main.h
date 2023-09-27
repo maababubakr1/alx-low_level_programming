@@ -24,4 +24,9 @@ int actual_sqrt(int n, int i);
 
 int is_divisible(int num, int div);
 
+int is_palindrome(char *s);
+
+int wildcmp(char *s1, char *s2);
+
+
 #endif
