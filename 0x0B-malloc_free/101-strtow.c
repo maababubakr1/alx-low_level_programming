@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *strtow - function that splits a string into words
- *@str: A string to be splitted
- *Return: pointer to array of strings (Success), NULL (Error)
+ *strtow - A function that splits the string into two
+ *@str: string to be splitted
+ *Return: Pointer to array of strings or NULL.
  */
 
 char **strtow(char *str)
