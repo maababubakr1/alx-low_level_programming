@@ -1,0 +1,30 @@
+#include "main.h"
+
+/**
+ *print_binary - A function that prints the binary representation of a number.
+ *
+ *@n: decimal number to be converted to binary
+ */
+
+void print_binary(unsigned long int n)
+{
+	unsigned long int temp;
+	int count, i = 0;
+
+	for (count = 63; count >= 0; count--)
+	{
+		temp = n >> count;
+
+		if (temp & count)
+		{
+			_putchar('1');
+			i++;
+		}
+
+		else if (i)
+			_putchar('0');
+	}
+
+	if (i)
+		_putchar('0');
+}
