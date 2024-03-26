@@ -1,1 +1,1 @@
-Dynamic lib
+Dynamic libr
